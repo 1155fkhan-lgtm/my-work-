@@ -1,0 +1,10 @@
+<h1>My Picture Gallery</h1>
+
+{% for picture in pictures %}
+  <div>
+    <h2>{{ picture.title }}</h2>
+    <p>{{ picture.description }}</p>
+    <img src="{{ picture.image.url }}" alt="{{ picture.title }}" style="max-width:300px;">
+  </div>
+  <hr>
+{% endfor %}
